@@ -7,6 +7,9 @@ String[] arr = new String[]{"11","22"}
 
 
 ##Math#
+Math.sqrt()//lower bound of square root  
+Math.abs()//absolute value
+Math.pow(x,y)//x power y
 
 ##String#
 String xx = new String() //declare and allocate
