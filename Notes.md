@@ -15,7 +15,9 @@ Math.pow(x,y)//x power y
 String xx = new String() //declare and allocate
 String.length()  
 String.equals()  
+String.charAt()
 String.substring(int begin, int end)  
+String.replace("()","")//replace brackets  
 String.replaceAll("[^a-z0-9]", "")//regular expression used to remove non-alphanumeric characters  
 String.toLowerCase  
 String.indexOf(String str)//can be used to check prefix  

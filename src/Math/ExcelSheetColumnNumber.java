@@ -8,8 +8,7 @@ public class ExcelSheetColumnNumber {
 	}
 //	public static int titleToNumber(String s) {
 //        int result = 0;
-//        for(int i=s.length()-1; i>=0; i--){
-//        	
+//        for(int i=s.length()-1; i>=0; i--){     	
 //            result= result + (s.charAt(i)-'A'+1)* (int)Math.pow(26,s.length()-i-1);
 //            System.out.println(result);
 //        }
