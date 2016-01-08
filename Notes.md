@@ -38,3 +38,5 @@ Character.isLetterOrDigit()
 HashMap<Character, Integer> Hashmap = new HashMap<Character, Integer>()  
 Hashmap.put(key,value)
 Hashmap.get(key)
+HashSet<Integer> Hashset = new HashSet<Integer>()
+Hashset.add()//
