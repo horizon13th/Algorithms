@@ -19,4 +19,8 @@ public class PowerOfThree {
         }
         return false;
     }
+	public static boolean isPowerOfThree1(int n) {
+	    return n > 0 && Math.pow(3,19) % n==0;
+	    //3 power 19 is the largest 3 power in integer range
+	}
 }
