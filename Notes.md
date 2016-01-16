@@ -1,42 +1,1 @@
-Notes
-=================
-
-##Array#
-int[] arr = new int[2];  
-String[] arr = new String[]{"11","22"}
-
-
-##Math#
-Math.sqrt()//lower bound of square root  
-Math.abs()//absolute value  
-Math.pow(x,y)//x power y
-
-##String#
-String xx = new String() //declare and allocate
-String.length()  
-String.equals()  
-String.charAt()
-String.substring(int begin, int end)  
-String.replace("()","")//replace brackets  
-String.replaceAll("[^a-z0-9]", "")//regular expression used to remove non-alphanumeric characters  
-String.toLowerCase()  
-String.indexOf(String str)//can be used to check prefix  
-
-StringBuffer  
-StringBuffer sb = new StingBuffer()  
-StringBuffer.append()  
-
-StringBuilder  
-StringBuilder sb = new StringBuilder()  
-StringBuilder.reverse()  
-StringBuilder.toString()  
-
-Character  
-Character.isLetterOrDigit() 
-
-##Hash#
-HashMap<Character, Integer> Hashmap = new HashMap<Character, Integer>()  
-Hashmap.put(key,value)
-Hashmap.get(key)
-HashSet<Integer> Hashset = new HashSet<Integer>()
-Hashset.add()//
+Notes=================##Array#int[] arr = new int[2];  String[] arr = new String[]{"11","22"}##Math#Math.sqrt()//lower bound of square root  Math.abs()//absolute value  Math.pow(x,y)//x power y##String#String xx = new String() //declare and allocateString.length()  String.equals()  String.charAt()String.substring(int begin, int end)  String.replace("()","")//replace brackets  String.replaceAll("[^a-z0-9]", "")//regular expression used to remove non-alphanumeric characters  String.toLowerCase()  String.indexOf(String str)//can be used to check prefix  StringBuffer  StringBuffer sb = new StingBuffer()  StringBuffer.append()  StringBuilder  StringBuilder sb = new StringBuilder()  StringBuilder.reverse()  StringBuilder.toString()  Character  Character.isLetterOrDigit() Integer  Integer.MAX_VALUE = 2147483647  Integer.MIN_VALUE = - 2147483648##Hash#HashMap<Character, Integer> Hashmap = new HashMap<Character, Integer>()    Hashmap.put(key,value)  Hashmap.get(key)  HashSet<Integer> Hashset = new HashSet<Integer>()  Hashset.add()//##Bit#a = 0011 1100  b = 0000 1101  a&b = 00001100//Bitwise And  a|b = 00111101//Bitwise Or  a^b = 00110001//Bitwise Xor: 1^1=0^0=0,1^0=0^1=1  ~a = 11000011//Bitwise compliment  a<<2 = 11110000//left shifta>>1 = 1111//right shift without zero fill  a>>>2 = 00001111//right shift with zero fill  ##Git#git status//check current status  git push//sync changes  git log//check history of the current version  git commit "description"

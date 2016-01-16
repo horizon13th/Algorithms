@@ -1,6 +1,6 @@
 package BinarySearch;
 
-public class searchMatrix {
+public class SearchMatrix {
 	public static void main(String args[]){
 		int[][] number = {
 		                  {1,   3,  5,  7},
