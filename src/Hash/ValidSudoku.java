@@ -20,7 +20,7 @@ public class ValidSudoku {
                     }
                 }
                 System.out.println(hs);
-            }
+            } 
         }
         return true;
     }
