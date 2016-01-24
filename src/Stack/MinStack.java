@@ -4,12 +4,10 @@ import java.util.Stack;
 
 public class MinStack {
 	public static void main(String args[]){
-		push(0);
-		push(1);
-		push(0);
+		push(-1);
+		top();
 		System.out.println(getMin());
-		pop();
-		System.out.println(getMin());
+
 	}
 	private static Stack<Integer> mStack = new Stack<Integer>();
 	private static Stack<Integer> mMinStack = new Stack<Integer>();
@@ -36,7 +34,7 @@ public class MinStack {
 	    }
 	}
 
-	public int top() {
+	public static int top() {
 	    return mStack.peek();
 	}
 
