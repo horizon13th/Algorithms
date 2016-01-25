@@ -1,5 +1,8 @@
 package Tree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class MinimumDepthofBinaryTree {
 	public static void main(String[] args) {
 		TreeNode r = new TreeNode(0);
@@ -17,5 +20,27 @@ public class MinimumDepthofBinaryTree {
 		if (root.right == null)
 			return 1 + minDepth(root.left);
 		return 1 + Math.min(minDepth(root.left), minDepth(root.right));
+	}
+	
+	public static int minDepth1(TreeNode root){
+		if(root==null)
+			return 0;
+		Queue<TreeNode> q=new LinkedList<TreeNode>();
+		q.add(root);
+		int depth=1;
+		while(!q.isEmpty()){
+			int size=q.size();
+			for(int i=0;i<size;i++){
+				TreeNode t=q.remove();
+				if(t.left==null&&t.right==null)
+					return depth;
+				if(t.left!=null)
+					q.add(t.left);
+				if(t.right!=null)
+					q.add(t.right);
+			}
+			depth++;
+		}
+		return depth;
 	}
 }
