@@ -15,22 +15,23 @@ public class BinaryTreeLevelOrderTraversal2 {
 	}
 
 	public static List<List<Integer>> levelOrderBottom(TreeNode root) {
-		List<List<Integer>> result=new ArrayList<List<Integer>>();
-		if(root==null)	return result;
-		Queue<TreeNode> q=new LinkedList<TreeNode>();
+		List<List<Integer>> result = new ArrayList<List<Integer>>();
+		if (root == null)
+			return result;
+		Queue<TreeNode> q = new LinkedList<TreeNode>();
 		q.add(root);
-		while(!q.isEmpty()){
-			int size=q.size();
-			List<Integer> level=new ArrayList<Integer>();
-			for(int i=0;i<size;i++){
-				TreeNode head=q.poll();
+		while (!q.isEmpty()) {
+			int size = q.size();
+			List<Integer> level = new ArrayList<Integer>();
+			for (int i = 0; i < size; i++) {
+				TreeNode head = q.poll();
 				level.add(head.val);
-				if(head.left!=null)
+				if (head.left != null)
 					q.add(head.left);
-				if(head.right!=null)
+				if (head.right != null)
 					q.add(head.right);
 			}
-			result.add(0,level);
+			result.add(0, level);
 		}
 		return result;
 	}

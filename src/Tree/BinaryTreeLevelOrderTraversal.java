@@ -16,7 +16,8 @@ public class BinaryTreeLevelOrderTraversal {
 
 	public static List<List<Integer>> levelOrder(TreeNode root) {
 		List<List<Integer>> result = new ArrayList<List<Integer>>();
-		if(root==null)	return result;
+		if (root == null)
+			return result;
 		Queue<TreeNode> q = new LinkedList<TreeNode>();
 		q.add(root);
 		while (!q.isEmpty()) {
