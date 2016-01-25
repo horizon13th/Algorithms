@@ -22,5 +22,5 @@ public class BinaryTreePaths {
 		if(root.left!=null)		search(root.left,path+root.val+"->",result);
 		if(root.right!=null)	search(root.right,path+root.val+"->",result);
 	}
-	
+
 }
