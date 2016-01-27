@@ -19,8 +19,7 @@ public class RomantoInteger {
 		hm.put('M', 1000);
 		int result = 0;
 		for (int i = s.length() - 1; i >= 0; i--) {
-			if (result < hm.get(s.charAt(i))
-					|| hm.get(s.charAt(i)) == hm.get(s.charAt(i + 1)))
+			if (result < hm.get(s.charAt(i))||hm.get(s.charAt(i)) == hm.get(s.charAt(i + 1)))
 				result += hm.get(s.charAt(i));
 			else
 				result -= hm.get(s.charAt(i));
