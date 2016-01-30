@@ -4,7 +4,9 @@ import java.util.Arrays;
 
 public class SpiralMatrix2 {
 	public static void main(String[] args) {
-		System.out.println(Arrays.toString(generateMatrix(3)));
+		int[][] r=generateMatrix(3);
+		for(int i=0;i<r.length;i++)
+			System.out.println(Arrays.toString(r[i]));
 	}
 
 	public static int[][] generateMatrix(int n) {
