@@ -1,4 +1,6 @@
-package Tree;
+package Tree.PathSum;
+
+import Tree.TreeNode;
 
 public class PathSum {
 	public static void main(String[] args) {

@@ -1,7 +1,9 @@
-package Tree;
+package Tree.PathSum;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import Tree.TreeNode;
 
 public class BinaryTreePaths {
 	public static void main(String[] args) {

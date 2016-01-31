@@ -1,7 +1,9 @@
-package Tree;
+package Tree.PathSum;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import Tree.TreeNode;
 
 public class PathSum2 {
 	public static void main(String[] args) {
