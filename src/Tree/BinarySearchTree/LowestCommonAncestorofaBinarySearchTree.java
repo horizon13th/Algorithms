@@ -1,4 +1,6 @@
-package Tree;
+package Tree.BinarySearchTree;
+
+import Tree.TreeNode;
 
 public class LowestCommonAncestorofaBinarySearchTree {
 	public static void main(String[] args) {
