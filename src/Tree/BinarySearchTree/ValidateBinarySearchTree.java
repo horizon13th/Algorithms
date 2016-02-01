@@ -20,7 +20,4 @@ public class ValidateBinarySearchTree {
 			return false;
         return helper(root.left, min, root.val)&&helper(root.right,root.val,max);
     }
-	public static boolean isValidBST1(TreeNode root){
-		
-	}
 }
