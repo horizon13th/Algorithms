@@ -1,9 +1,5 @@
 package Tree;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-
 public class LowestCommonAncestorOfaBinaryTree {
 	public static void main(String[] args) {
 //		TreeNode r=new TreeNode(0);
@@ -21,11 +17,17 @@ public class LowestCommonAncestorOfaBinaryTree {
     
 	public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 		if(root==null||root==p||root==q)	return root;
+		//label whether there exist p/q 
 		TreeNode left=lowestCommonAncestor(root.left, p,q);
 		TreeNode right=lowestCommonAncestor(root.right,p,q);
-		if(left==null)	return right;
-		if(right==null)	return left;
-		return root;
+		//check whether left or right side have p/q
+		if(left!=null && right!=null)
+			return root;
+		if(left==null)
+			return right;
+		else
+			return left;
+		//if left subtree includes p and right includes q, return 
     }
 
 }
