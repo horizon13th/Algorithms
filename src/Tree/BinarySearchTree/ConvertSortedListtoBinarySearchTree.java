@@ -11,7 +11,7 @@ public class ConvertSortedListtoBinarySearchTree {
         if(left==right) return null;
         ListNode mid=left;
         ListNode fast=left;
-        //slow and fast pointer
+        //slow and fast pointer to find the mid listNode
         while(fast!=right && fast.next!=right){
             mid=mid.next;
             fast=fast.next.next;
