@@ -14,6 +14,7 @@ public class Numberof1Bits {
 				count++;
 			n = n >>> 1;
 			// when n=n>>1, the results goes wrong
+			// >>> means not only right shift but also delete 0s
 		}
 		return count;
 	}
