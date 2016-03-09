@@ -1,6 +1,6 @@
 package DynamicProgramming;
 
-public class GrayCode {
+public class DecodeWays {
 	public static void main(String args[]) {
 		String str1 = "111";
 		System.out.println(numDecodings(str1));
