@@ -16,7 +16,7 @@ public class BinarySearchTreeIterator {
 		List<Integer> res = new ArrayList<Integer>();
 		while (i.hasNext())
 			res.add(i.next());
-		System.out.println(res);
+		System.out.println(res);	
 	}
 	public Stack<TreeNode> st = new Stack<TreeNode>();
 
