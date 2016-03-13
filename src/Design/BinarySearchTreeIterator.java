@@ -18,7 +18,7 @@ public class BinarySearchTreeIterator {
 			res.add(i.next());
 		System.out.println(res);	
 	}
-	public Stack<TreeNode> st = new Stack<TreeNode>();
+	private Stack<TreeNode> st = new Stack<TreeNode>();
 
 	public BinarySearchTreeIterator(TreeNode root) {
 		pushAll(root);
