@@ -17,6 +17,6 @@ public class MergeTwoSortedLists {
 			newHead.next = mergeTwoLists(l1, l2.next);
 		}
 
-		return newHead;
+		return newHead; 
 	}
 }
