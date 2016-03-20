@@ -4,22 +4,19 @@ package Array;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 
 
 public class Cutthesticks {
 	public static void main(String[] args)throws IOException {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        System.out.print("Enter String");
-        String result = br.readLine();
-	    
-        String[] resArr = result.split(",");
-        String[] intArr = resArr[1].split("\\s+");
-        int[] sticks = new int[intArr.length];
-        for(int i=0; i<sticks.length; i++){
-            sticks[i]=Integer.parseInt(intArr[i]);
-        }
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int[] sticks = new int[n];
+		for(int i=0; i<n; i++){
+			sticks[i]= sc.nextInt();
+		}
         cutSticks(sticks);
     }
     public static void cutSticks(int[] sticks){
