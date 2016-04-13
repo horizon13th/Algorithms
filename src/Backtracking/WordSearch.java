@@ -27,6 +27,7 @@ public class WordSearch {
         if(i<0||i>=board.length||j<0||j>=board[0].length||word.charAt(pos)!=board[i][j]||visit[i][j])
             return false;
         visit[i][j]=true;
+       
         if(helper(visit,board, word, i+1, j, pos+1)||helper(visit,board, word, i-1, j, pos+1)||helper(visit,board, word, i, j+1, pos+1)||helper(visit,board, word, i, j-1, pos+1))  return true;
         visit[i][j]=false;
         return false;
