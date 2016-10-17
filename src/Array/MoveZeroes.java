@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class MoveZeroes {
 	public static void main(String args[]) {
-		int aNums[] = { 1, 1, 2, 2, 0, 2, 0, 3, 3, 4 };
+		int aNums[] = { 1, 1, 2, 2, 0, 2, 0, 3, 0, 3, 4 };
 		moveZeroes(aNums);
 	}
 
