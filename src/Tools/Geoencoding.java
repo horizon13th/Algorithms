@@ -11,8 +11,13 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Geoencoding {
 	public static void main(String[] args)throws IOException {
@@ -21,18 +26,18 @@ public class Geoencoding {
 //		String testURL = sc.nextLine();
 //		System.out.println(sc.nextLine());
 //		System.out.println(callURL(testURL));
-		List<String> strList = readFileByLines("src/Tools/address.txt");
-		StringBuffer sb = new StringBuffer();
-		String temp, lon, lat;
-		for(int i=0; i<strList.size();i++){
-			 temp = callURL(strList.get(i));
-			 lon = (temp.substring(temp.lastIndexOf("lng\":")+5,temp.lastIndexOf("lng\":")+18)+", ");
-			 lat = (temp.substring(temp.lastIndexOf("lat\":")+5,temp.lastIndexOf("lat\":")+18)+"");
-			sb.append(lon+lat);
-			sb.append(System.getProperty("line.separator"));
-			System.out.println(i);
-		}
-		writeFile(sb.toString());
+		
+	      
+//		String temp, lon, lat;
+//		for(int i=0; i<strList.size();i++){
+//			 temp = callURL(strList.get(i));
+//			 lon = (temp.substring(temp.lastIndexOf("lng\":")+5,temp.lastIndexOf("lng\":")+18)+", ");
+//			 lat = (temp.substring(temp.lastIndexOf("lat\":")+5,temp.lastIndexOf("lat\":")+18)+"");
+//			sb.append(lon+lat);
+//			sb.append(System.getProperty("line.separator"));
+//			System.out.println(i);
+//		}
+//		writeFile(sb.toString());
 
 
     }
