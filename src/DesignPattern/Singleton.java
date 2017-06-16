@@ -15,6 +15,7 @@ public class Singleton {
 		if(s==null){
 			s= new Singleton(SinName);
 		}
+
 		return s;
 	}
 }

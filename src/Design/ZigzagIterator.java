@@ -51,4 +51,10 @@ public class ZigzagIterator implements Iterator<Integer> {
     public boolean hasNext() {
         return itlist.size() > 0;
     }
+
+	@Override
+	public void remove() {
+		// TODO Auto-generated method stub
+		
+	}
 }

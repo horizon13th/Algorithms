@@ -28,4 +28,10 @@ public class PeekingIterator implements Iterator<Integer> {
 	public boolean hasNext() {
 	    return next!=null;
 	}
+
+	@Override
+	public void remove() {
+		// TODO Auto-generated method stub
+		
+	}
 }

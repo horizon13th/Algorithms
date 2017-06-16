@@ -15,7 +15,7 @@ public class FindMedianfromDataStream {
 		System.out.println(f.findMedian());
 	}
 	private PriorityQueue<Integer> minH= new PriorityQueue<Integer>();
-	private PriorityQueue<Integer> maxH= new PriorityQueue<Integer>(Collections.reverseOrder());
+	private PriorityQueue<Integer> maxH= new PriorityQueue<Integer>();
 	// Adds a number into the data structure.
 	public void addNum(int num) {
 		maxH.offer(num);
